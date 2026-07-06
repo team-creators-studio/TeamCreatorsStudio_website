@@ -6,6 +6,9 @@ body {
   background-color: rgb(73, 73, 73);
 }
 
+a{
+  text-decoration: none;
+}
 
 .topnav {
   background-color: #333;
@@ -36,7 +39,7 @@ body {
 
 .title_p{
   font-family: 'Alatsi';
-  font-size: 2em;
+  font-size: 22px;
   font-weight: bold;
   color: white;
 }
@@ -58,13 +61,12 @@ body {
 }
 
 .frame_name {
-  width: 400px;  
-  height: 200px;
+  width: 300px;  
+  height: 150px;
   background: url(assets/sky.webp) center/cover;
   -webkit-mask-image: url(assets/name.webp);
   mask-image: url(assets/name.webp);
   mask-repeat: no-repeat;
   mask-size: contain;
-  -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
 }
