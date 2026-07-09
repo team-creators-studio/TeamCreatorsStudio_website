@@ -23,6 +23,7 @@ a{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  -webkit-text-stroke: 1px rgb(71, 71, 71);
 }
 
 
@@ -39,7 +40,7 @@ a{
 
 .title_p{
   font-family: 'Alatsi';
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
@@ -58,11 +59,13 @@ a{
   padding: 5px;
   width: 150px;
   height: 150px;
+  
 }
 
 .frame_name {
   width: 300px;  
   height: 150px;
+  padding: 12px;
   background: url(assets/sky.webp) center/cover;
   -webkit-mask-image: url(assets/name.webp);
   mask-image: url(assets/name.webp);
