@@ -46,30 +46,63 @@ a{
 }
 
 .link_p{
-  font-family: 'Tilt Warp';font-size: 22px;
+  font-family: 'Tilt Warp';font-size: 18px;
 }
 
 .text_p{
   font-family: 'Suwannaphum';font-size: 22px;
 }
 
-.frame_pic{
+.image-stack-container {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 200px;
+  background-image: url(assets/images.png);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.frame_pic {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(assets/sky.webp);
   border-radius: 50%;
   border: 2px solid rgb(17, 17, 17);
-  padding: 5px;
   width: 150px;
   height: 150px;
-  
+  z-index: 2;
 }
 
 .frame_name {
+  position: absolute;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 300px;  
   height: 150px;
-  padding: 12px;
   background: url(assets/sky.webp) center/cover;
   -webkit-mask-image: url(assets/name.webp);
   mask-image: url(assets/name.webp);
   mask-repeat: no-repeat;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
+  z-index: 3;
 }
