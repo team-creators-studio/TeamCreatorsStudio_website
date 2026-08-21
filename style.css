@@ -69,7 +69,7 @@ a{
   transform: translateX(-50%);
   width: 100%;
   height: 200px;
-  background-image: url(assets/images.png);
+  background-image: url(assets/code.webp);
   filter: blur(8px);
   -webkit-filter: blur(8px);
   background-position: center;
